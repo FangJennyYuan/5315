@@ -19,12 +19,18 @@
             success: function(xml) {  
              $(xml).find('data').each(function(){  
               t.row.add( [
-                $(this).find('name').text(),
-                $(this).find('designation').text(),
-                $(this).find('office').text(),
-                $(this).find('extension').text(),
-                $(this).find('joining_date').text(),
-                $(this).find('salary').text()
+                $(this).find('street').text(),
+                $(this).find('city').text(),
+                $(this).find('zip').text(),
+                $(this).find('state').text(),
+                $(this).find('beds').text(),
+                $(this).find('baths').text(),
+                $(this).find('sq_ft').text(),
+                $(this).find('type').text(),
+                $(this).find('sale_date').text(),
+                $(this).find('price').text(),
+                $(this).find('latitude').text(),
+                $(this).find('longitude').text()
               ] ).draw( false );
              });
             }
@@ -37,23 +43,35 @@
   <table id="chart" class="display" cellspacing="0" width="100%">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>State</th>
+            <th>Beds</th>
+            <th>Baths</th>
+            <th>Square feet</th>
+            <th>Type</th>
+            <th>Sale Date</th>
+            <th>Price</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>State</th>
+            <th>Beds</th>
+            <th>Baths</th>
+            <th>Square feet</th>
+            <th>Type</th>
+            <th>Sale Date</th>
+            <th>Price</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
         </tr>
     </tfoot>
   </table>
