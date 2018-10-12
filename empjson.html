@@ -10,30 +10,34 @@
     <table id="empTable" class="display" width="100%" cellspacing="0">
         <thead>
             <tr>
-                <th>Employee Number</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Day Worked</th>
-                <th>Start Shift</th>
-                <th>End Shift</th>
-                <th>Break Time (in hours)</th>
-                <th>Employee Type</th>
-                <th>Phone Number</th>
-                <th>Birthday</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Zip</th>
+                <th>State</th>
+                <th>Beds</th>
+                <th>Baths</th>
+                <th>Square feet</th>
+                <th>Type</th>
+                <th>Sale Date</th>
+                <th>Price</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Employee Number</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Day Worked</th>
-                <th>Start Shift</th>
-                <th>End Shift</th>
-                <th>Break Time (in hours)</th>
-                <th>Employee Type</th>
-                <th>Phone Number</th>
-                <th>Birthday</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Zip</th>
+                <th>State</th>
+                <th>Beds</th>
+                <th>Baths</th>
+                <th>Square feet</th>
+                <th>Type</th>
+                <th>Sale Date</th>
+                <th>Price</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
             </tr>
         </tfoot>
     </table>
@@ -48,16 +52,18 @@
         $('#empTable').dataTable({
             "ajax": "empdata.js",
             "columns": [
-                {"data": "Employee_Number"},
-                {"data": "First_Name"},
-                {"data": "Last_Name"},
-                {"data": "Day_Worked"},
-                {"data": "Start_Shift"},
-                {"data": "End_Shift"},
-                {"data": "Break_Time_(in_hours)"},
-                {"data": "Employee_Type"},
-                {"data": "Phone_Number"},
-                {"data": "Birthday"}
+                {"data": "street"},
+                {"data": "city"},
+                {"data": "zip"},
+                {"data": "state"},
+                {"data": "beds"},
+                {"data": "baths"},
+                {"data": "sq_ft"},
+                {"data": "type"},
+                {"data": "sale_date"},
+                {"data": "price"},
+                {"data": "latitude"},
+                {"data": "longitude"}
             ]
         });   
     });
